@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "adxl345.h": "cpp",
+        "stdint.h": "cpp",
+        "msp430f425a.h": "cpp",
+        "msp430g2553.h": "cpp",
+        "i2c.h": "cpp",
+        "oled.h": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.encoding": "utf8"
+}
