@@ -1,5 +1,5 @@
 /*
- * #coding: gb2312
+ * #coding: utf-8
  * #Author: vector-wlc
  * #Date: 2020-05-12 12:11:02
  * #Description: BASE CLASS I2C  

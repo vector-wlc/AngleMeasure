@@ -1,5 +1,5 @@
 /*
- * @coding: gb2312
+ * @coding: utf-8
  * @Author: vector-wlc
  * @Date: 2020-04-08 20:32:23
  * @Description: include base functions

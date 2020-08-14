@@ -1,5 +1,5 @@
 /*
- * @coding: gb2312
+ * @coding: utf-8
  * @Author: vector-wlc
  * @Date: 2020-05-26 21:33:52
  * @Description: CLASS Adxl345
@@ -185,12 +185,12 @@ uint8_t *Adxl345::GetAngle()
     uint16_t heng_gun = getHengGun(y_data, z_data);     // 横滚角
 
     // 将角度数据写入缓冲区
-    data_buf[1] = hang_xiang >> 8;
-    data_buf[2] = hang_xiang & 0xff;
-    data_buf[3] = fu_yang >> 8;
-    data_buf[4] = fu_yang & 0xff;
-    data_buf[5] = heng_gun >> 8;
-    data_buf[6] = heng_gun & 0xff;
+    data_buf[0] = hang_xiang >> 8;
+    data_buf[1] = hang_xiang & 0xff;
+    data_buf[2] = fu_yang >> 8;
+    data_buf[3] = fu_yang & 0xff;
+    data_buf[4] = heng_gun >> 8;
+    data_buf[5] = heng_gun & 0xff;
 
     return data_buf;
 }

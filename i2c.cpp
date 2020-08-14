@@ -1,5 +1,5 @@
 /*
- * @coding: gb2312
+ * @coding: utf-8
  * @Author: vector-wlc
  * @Date: 2020-05-20 19:19:18
  * @Description: BASE CLASS I2c
@@ -194,33 +194,27 @@ uint8_t I2c::receiveByte(uint8_t ack)
 
 uint8_t I2c::ReadByte(uint8_t address)
 {
-    uint8_t error = 0;
-
-    ++error;
     if (!start())
     {
-        return error;
+        return 0;
     }
     sendByte(slave_address << 1); /* 器件地址 */
 
-    ++error;
     if (!receiveAck())
     {
         stop();
-        return error;
+        return 0;
     }
     sendByte(address); /* 设置低起始地址 */
     receiveAck();
 
-    ++error;
     if (!start())
     {
-        return error;
+        return 0;
     }
 
     sendByte((slave_address << 1) + 1); /* 器件地址 */
 
-    ++error;
     if (!receiveAck())
     {
     }
@@ -232,25 +226,22 @@ uint8_t I2c::ReadByte(uint8_t address)
 
 uint8_t I2c::WriteByte(uint8_t address, uint8_t data)
 {
-    uint8_t error = 0;
 
-    ++error;
     if (!start())
     {
-        return error;
+        return 0;
     }
     sendByte(slave_address << 1); /* 器件地址 */
 
-    ++error;
     if (!receiveAck())
     {
         stop();
-        return error;
+        return 0;
     }
     sendByte(address); /* 设置低起始地址 */
     receiveAck();
     sendByte(data);
     receiveAck();
     stop();
-    return 0xFF;
+    return 1;
 }

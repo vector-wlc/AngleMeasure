@@ -1,5 +1,5 @@
 /*
- * @coding: gb2312
+ * @coding: utf-8
  * @Author: vector-wlc
  * @Date: 2020-05-26 10:47:55
  * @Description: CLASS OLED

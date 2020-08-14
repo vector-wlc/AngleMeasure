@@ -1,4 +1,4 @@
-"G:\study\MSP430\Inclination_measurement\i2c.cpp"
+"G:\study\MSP430\AngleMeasure\i2c.cpp"
 -std=c++98
 -ferror-limit=0
 -I

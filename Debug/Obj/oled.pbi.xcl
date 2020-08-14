@@ -1,4 +1,4 @@
-"G:\study\MSP430\Inclination_measurement\oled.cpp"
+"G:\study\MSP430\AngleMeasure\oled.cpp"
 -std=c++98
 -ferror-limit=0
 -I

@@ -1,5 +1,5 @@
 /*
- * @coding: gb2312
+ * @coding: utf-8
  * @Author: vector-wlc
  * @Date: 2020-05-24 19:45:08
  * @Description: UART 通信类
